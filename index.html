@@ -1,63 +1,96 @@
-<!DOCTYPE html>
+!DOCTYPE html>
+
+
 <html lang="en">
+
+
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue.js Introduction</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+   <meta charset="utf-8">
+
+
+   <title>My Super Site</title>
+
+
 </head>
+
+
+
+
 <body>
-    <div id="app">
-        {{ message }}
 
-    </div>
-    
-    <div id="list-app">
-        <p>Shopping list</p>
-        <ul>
-            <li v-for="item in shoppingList">
-                {{ item }}
-            </li>
 
-        </ul>
+   <header>
 
-    </div>
 
-    <div id="if-app">
-        <span v-if="seeable">You can see this text!</span>
-        <button v-on:click="toggleMessage">Toggle Message!</button>
-    </div>
+      <h1>My Super Site</h1>
 
-    <script>
-        
-        let myVue = new Vue({
-            el: "#app",
-            data: {
-                message: "Hello world!"
-            }
-        });
-        let listVue = new Vue({
-            el: "#list-app",
-            data: {
-                shoppingList: ["flour", "eggs", "salt", "baking powder", "potatoes", "onions"]
-            }
 
-        });
+   </header>
 
-        let ifVue = new Vue({
-            el: "#if-app",
-            data: {
-                seeable: false
-            },
-            methods: {
-                toggleMessage: function () {
-                    this.seeable = !this.seeable;
-                }
-            }
-        });
-        
-    </script>
-    
-    
+
+   <p>Curabitur at magna at leo aliquet eleifend sed quis velit. Vivamus et rhoncus nulla, sed vestibulum odio. Morbi id
+
+
+      lacinia dui. Pellentesque cursus, ipsum vitae ornare interdum, lorem ante interdum quam, et ultrices tortor neque
+
+
+      vel arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec
+
+
+      risus urna, ultricies sit amet lacus sed, ullamcorper pretium lacus. Etiam non metus sed odio fermentum
+
+
+      condimentum tincidunt ut velit. In sed purus elementum, luctus diam eu, mattis erat. Integer hendrerit ornare orci
+
+
+      mollis interdum. Vivamus rhoncus massa sed nisi luctus tempus. Aliquam facilisis fringilla sapien, ut porttitor
+
+
+      velit ullamcorper at. Donec venenatis molestie dui quis egestas. Nullam sit amet tortor tincidunt, porta turpis
+
+
+      sit amet, ullamcorper velit. </p>
+
+
+   <div>
+
+
+      <h3>Conures </h3>
+
+
+      <ol>
+
+
+         <li>Green Cheek</li>
+
+
+         <li>Sun</li>
+
+
+         <li>Dusky</li>
+
+
+         <li>Nanday</li>
+
+
+      </ol>
+
+
+   </div>
+
+
+   <footer>
+
+   </footer>
+
+
 </body>
+
+
+
+
 </html>
